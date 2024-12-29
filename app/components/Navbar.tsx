@@ -35,13 +35,16 @@ const navbar = async () => {
             </>
           ):(
             // option 2 : if user is not logged in
-            <button onClick={async () => {
+            <form action={async () => {
                 "use server";
+
                 await signIn('github')
               }}>
                  
-              <span>Login</span>
-            </button>
+              <button type="submit">
+                Login
+              </button>
+            </form>
           )}
 
         </div>
