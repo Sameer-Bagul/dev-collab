@@ -25,9 +25,16 @@ const navbar = async () => {
                 <span>Create</span>
               </Link>
 
-              <button onClick={signOut}>
-                <span>Logout</span>
-              </button>
+              <form
+                action={async () => {
+                  "use server";
+                  await signOut({ redirectTo: "/" });
+                }}
+              >
+                <button type="submit">
+                  <span className="max-sm:hidden">Logout</span>
+                </button>
+              </form>
 
               <Link href={`/user/${session?.id}`}>
                 <span>{session?.user?.name}</span>
@@ -37,7 +44,6 @@ const navbar = async () => {
             // option 2 : if user is not logged in
             <form action={async () => {
                 "use server";
-
                 await signIn('github')
               }}>
                  
