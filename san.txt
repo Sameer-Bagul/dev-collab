@@ -1,0 +1,76 @@
+Warning: PowerShell detected that you might be using a screen reader and has disabled PSReadLine for compatibility purposes. If you want to re-enable it, run 'Import-Module PSReadLine'.
+
+PS D:\Projects\Node Modules included web projects\dev-collab> npm create sanity@latest -- --project fremedvb --dataset production --template clean
+Need to install the following packages:
+create-sanity@3.68.3
+Ok to proceed? (y) y
+
+⠇
+PS D:\Projects\Node Modules included web projects\dev-collab> npm create sanity@latest -- --project fremedvb --dataset production --template clean
+Need to install the following packages:
+create-sanity@3.68.3
+Ok to proceed? (y) y
+
+
+> dev-collab@0.1.0 npx
+> create-sanity fremedvb production clean
+
+
+   ╭─────────────────────────────────────────────────────────────────────────────╮
+   │                                                                             │
+   │   The Sanity CLI now collects telemetry data on general usage and errors.   │
+   │   This helps us improve Sanity and prioritize features.                     │
+   │                                                                             │
+   │   To opt in/out, run npx sanity telemetry enable/disable.                   │
+   │                                                                             │
+   │   Learn more here:                                                          │
+   │   https://www.sanity.io/telemetry                                           │
+   │                                                                             │
+   ╰─────────────────────────────────────────────────────────────────────────────╯
+
+⚠ No authentication credentials found in your Sanity config
+
+? Please log in or create a new account Google
+
+Opening browser at https://api.sanity.io/v1/auth/login/google?type=token&label=DESKTOP-OBGDFMG+%2F+Windows&origin=http%3A%2F%2Flocalhost%3A4321%2Fcallback
+
+✓ Login successful
+✓ Fetching existing projects
+
+? Create a new project or select an existing one dev-collab [fremedvb]
+? Select dataset to use Create new dataset
+? Dataset name: dev-collab
+? Choose dataset visibility – this can be changed later Public (world readable)
+✓ Creating dataset
+? Would you like to add configuration files for a Sanity project in this Next.js folder? Yes
+⚠ ╭────────────────────────────────────────────────────────────╮
+⚠ │                                                            │
+⚠ │ It looks like you are using Next.js 15 and React 19        │
+⚠ │ Please read our compatibility guide.                       │
+⚠ │ https://www.sanity.io/help/react-19                        │
+⚠ │                                                            │
+⚠ ╰────────────────────────────────────────────────────────────╯
+? Do you want to use TypeScript? Yes
+? Would you like an embedded Sanity Studio? Yes
+? What route do you want to use for the Studio? /studio
+? Select project template to use Clean project with no predefined schema types
+? Would you like to add the project ID and dataset to your .env.local file? Yes
+Added http://localhost:3000 to CORS origins
+Running 'npm install --legacy-peer-deps --save @sanity/vision@3 sanity@3 @sanity/image-url@1 styled-components@6'
+
+added 910 packages, and audited 1317 packages in 2m
+
+245 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+added 15 packages, and audited 1332 packages in 7s
+
+245 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+Success! Your Sanity configuration files has been added to this project
+PS D:\Projects\Node Modules included web projects\dev-collab> 
